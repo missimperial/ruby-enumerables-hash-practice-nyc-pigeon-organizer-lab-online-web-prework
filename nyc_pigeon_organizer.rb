@@ -15,12 +15,11 @@ revised_data = {}
   data[:gender].each do |gender, names|
     names.each do |name|
       revised_data[name][:gender] = [gender.to_s]
-      binding.pry
     end end
 
   data[:lives].each do |location, names|
     names.each do |name|
-      revised_data[name][:lives] = location.to_s
+      revised_data[name][:lives] = [location.to_s]
       end end
 
 
